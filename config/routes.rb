@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
   # Defines the root path route ("/")
   # root "articles#index"
+
+  # Get localhost:3000/action
+  get"ask",    to: "questions#ask"
+  get"answer", to: "questions#answer"
+  # verb "/path", to: "contoller#action"
 end
